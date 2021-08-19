@@ -9,6 +9,9 @@ A Flutter project for ongoing zuri.Hng internship
 
 ## NB 
 I test with chrome but my target device is android.
+https://user-images.githubusercontent.com/34977309/129905009-972a677d-418c-41ce-9f5d-b4880832b478.mp4
+
+
  
 
 ## Getting Started
