@@ -4,6 +4,11 @@ A Flutter project for ongoing zuri.Hng internship
 
 
 ## Demo 
+
+
+
+## NB 
+I test with chrome but my target device is android.
  
 
 ## Getting Started

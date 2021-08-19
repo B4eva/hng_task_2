@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -213,8 +214,21 @@ class _MyHomePageState extends State<MyHomePage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text('Visit Zuri team at: '),
-                          SvgPicture.asset(
-                            'assets/images/ZuriLogo.svg',
+                          SizedBox(
+                            width: 3,
+                          ),
+                          GestureDetector(
+                            onTap: () async {
+                              var url = 'https://internship.zuri.team';
+                              if (await canLaunch(url)) {
+                                await launch(url);
+                              } else {
+                                throw 'could not lunch $url';
+                              }
+                            },
+                            child: SvgPicture.asset(
+                              'assets/images/ZuriLogo.svg',
+                            ),
                           ),
                         ],
                       )
